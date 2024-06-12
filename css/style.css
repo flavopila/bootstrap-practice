@@ -3,8 +3,30 @@ body {
     overflow-x: hidden;
   }
 
-.alert-container{
+  .container-wrapper{
 
+  }
+
+  .container-wrapper-red {
+    background-color: #b16837;
+    color: white;
+  }
+
+  .container-wrapper-tint{
+    background-color: #ece3dc;
+  }
+
+.alert-container .col-12{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert{
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #ffc200;
+    border-color: #ffc200;
 }
 
 .callout-container{
@@ -23,11 +45,15 @@ body {
 }
 
 .quotes-container{
-
+  
 }
 
 .favourites-container{
+    text-align: justify;
+}
 
+.favourites-container caption{
+  text-align: center;
 }
 
 .features-container{
@@ -43,21 +69,87 @@ body {
   background-color: hsla(0, 0%, 0%, 0.5);
 }
 
+/* PAGE HEADER */
+
+.page-header{
+  margin-bottom: 0;
+  border-bottom: 0;
+  text-align: center;
+
+}
+
+.page-header h2{
+  margin-top: 0;
+}
+
+.quotes .page-header{
+  margin-bottom: 50px;
+}
+
 /* BLOCK DIVIDERS */
 
 .blockdivider{
-  width: 160px;
+  width: 100px;
   height: 5px;
   border: 0;
   background-color: #e6e6e6;
+}
+
+.bdvdr-short{
+  width: 60px;
+  background-color: #444;
 }
 
 .bdvdr-red{
   background-color: #dd2525;
 }
 
-.bdvdr-short{
-  width: 75px;
+.bdvdr-white{
+  background-color: #ffffff;
+}
+
+/* CONTENT CONTAINER */
+
+.content-container{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+/* .contentbox{
+  background-color: hsla(0, 0%, 0%, 0.2);
+  padding: 10px;
+  border-radius: 20px;
+} */
+
+/* NAVBAR STYLE */
+
+.navalert-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 1;
+}
+
+.navbar{
+  margin-bottom: 0;
+  border: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.50);
+}
+
+.navbar .navbar-toggler{
+  border: 0;
+}
+
+.navbar-brand{
+  font-weight: bold;
+}
+
+.navbar .navbar-nav a{
+  font-weight: bold;
+  margin-left: 20px;
 }
 
 /* JUMBOTRON */
@@ -83,8 +175,10 @@ body {
   color: #a3a3a3;
 }
 
-.modalmargin{
+.modalstyle{
+  margin: auto;
   margin-top: 25vH;
+  width: 80%;
 }
 
 /* BUTTONS */
@@ -113,4 +207,25 @@ form .btn{
   background-color: #c74a2d;
   border-color: #c74a2d;
 
+}
+
+.feature{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature i{
+  margin-bottom: 20px;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.feature .btn{
+  background-color: white;
+  border-color: white;
+  border-radius: 15px;
+  min-width: 100px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #a84300;
 }
